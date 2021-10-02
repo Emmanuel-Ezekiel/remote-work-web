@@ -1,7 +1,3 @@
-# We_work_remotely
-
-This project was created with React, used in cloning the webpage of weworkremotely.com.
-It's a responsive website, This website will help employers in hiring.
 
 # Getting Started with Create React App
 
