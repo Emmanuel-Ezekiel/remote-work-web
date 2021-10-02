@@ -1,6 +1,11 @@
-# Getting Started with React 
+# We_work_remotely
 
-This project was created with React 
+This project was created with react, used in cloning the webpage of weworkremotely.com.
+It's a responsive website, This website will help employers in hiring.
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
