@@ -62,7 +62,7 @@ Global Styles
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: var(--clr-grey-10);
+  background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 62.5%;
@@ -130,9 +130,11 @@ p {
   max-width: var(--max-width);
 }
 
-@media screen and (min-width: 992px) {
-  .section {
+@media screen and (min-width: 800px) {
+  .section, nav {
     width: 95vw;
+    margin: 0 auto;
+    font-size: 1.2rem;
   }
 }
 
@@ -188,8 +190,10 @@ p {
   .nav-center {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
+    transition: all 0.3s ease;
+    background-color: #fff !important;
+    box-sizing: border-box;
+    padding: 10px 175px 2px 175px;
   }
   .toggle-btn {
     display: none;
@@ -197,27 +201,75 @@ p {
   .search-btn {
     display: inline-block;
   }
-  .nav-links {
+  
+  /* nav .nav-bar {
+    z-index: 1000;
+    background: #fff;
+  } */
+
+  /* nav ul {
+    display: flex;
+    justify-content: left;
+    line-height: 0.9em;
+    z-index: 1000;
+    float: right;
+    display: inline-block;
+  } */
+
+  /* .nav-links>li {
     display: block;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    height: 100%;
-    display: grid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  } */
+
+  /* .nav_links>li>a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 20px 10px 20px 10px;
+    transition: all 0.2s;
+} */
+
+  .nav-links {
+    display: flex;
+    justify-self: left;
+    line-height: 0.9em;
+    z-index: 1000;
     align-items: center;
+    float: right;
   }
-  .nav-links li {
+
+  .nav-links li { 
     height: 100%;
   }
   .link-btn {
     height: 100%;
     background: transparent;
     border-color: transparent;
-    font-size: 1.1rem;
-    color: var(--clr-black);
     text-transform: capitalize;
     letter-spacing: 1px;
-    width: 10rem;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 20px 10px 20px 10px;
+    transition: all 0.2s;
+
   }
+
+  .link-btn>a {
+    color: #212529;
+  }
+
+  #post-btn {
+    background-color: #f03e3e;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px 20px 8px 20px;
+    border-radius: 2px;
+  }
+
 }
