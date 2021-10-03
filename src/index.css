@@ -202,37 +202,6 @@ p {
     display: inline-block;
   }
   
-  /* nav .nav-bar {
-    z-index: 1000;
-    background: #fff;
-  } */
-
-  /* nav ul {
-    display: flex;
-    justify-content: left;
-    line-height: 0.9em;
-    z-index: 1000;
-    float: right;
-    display: inline-block;
-  } */
-
-  /* .nav-links>li {
-    display: block;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  } */
-
-  /* .nav_links>li>a {
-    color: #212529;
-    text-decoration: none;
-    font-weight: 400;
-    display: inline-block;
-    font-size: 0.8em;
-    margin: 20px 10px 20px 10px;
-    transition: all 0.2s;
-} */
-
   .nav-links {
     display: flex;
     justify-self: left;
@@ -240,6 +209,7 @@ p {
     z-index: 1000;
     align-items: center;
     float: right;
+    cursor: pointer;
   }
 
   .nav-links li { 

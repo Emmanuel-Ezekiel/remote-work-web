@@ -14,20 +14,20 @@ function Navbar() {
                   <nav className="nav-bar">
                     <ul className="nav-links">
                       <li className="link-btn">
-                          <a href="#">Categories</a>
+                          <a href="/categories">Categories</a>
                       </li>
                       <li className="link-btn">
-                          <a href="#">Community</a>
+                          <a href="/community">Community</a>
                       </li>
                       <li className="link-btn">
-                          <a href="#">Job Seekers</a>
+                          <a href="/job seekers">Job Seekers</a>
                       </li>
                       <li className="link-btn">
-                          <a href="#">Employers</a>
+                          <a href="/employers">Employers</a>
                       </li>  
                     <li className="link-btn search-btn" > <FaSearch/></li>
                     <li className="link-btn">
-                        <a id="post-btn" href="#" >post a job</a>
+                        <a id="post-btn" href="/post job" >post a job</a>
                     </li>
                   </ul>
                 </nav>
