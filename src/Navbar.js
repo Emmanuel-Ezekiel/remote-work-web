@@ -7,7 +7,7 @@ function Navbar() {
           <header className='nav'>
               <div className="nav-center">
                   <div className="nav-header">
-                      <a className="nav-logo logo" href="/remote">WorkRemotely</a>
+                      <a className="nav-logo logo" href="https://we-work-remotely.netlify.app">WorkRemotely</a>
                       <button className="btn toggle-btn"> <FaBars/></button>
                   </div>
 
