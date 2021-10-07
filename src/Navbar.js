@@ -7,7 +7,7 @@ function Navbar() {
           <header className='nav'>
               <div className="nav-center">
                   <div className="nav-header">
-                      <img alt="we work remotely" className="nav-logo" src="https://weworkremotely.com/assets/IsotypeV2-1ebe3dd57673f3e8d02b7490bc0faaef55d6a95d3a4aaf17298bd3ed503ae7fe.svg"></img>
+                      <a className="nav-logo logo" href="/remote">WorkRemotely</a>
                       <button className="btn toggle-btn"> <FaBars/></button>
                   </div>
 
@@ -27,7 +27,7 @@ function Navbar() {
                       </li>  
                     <li className="link-btn search-btn" > <FaSearch/></li>
                     <li className="link-btn">
-                        <a id="post-btn" href="/post job" >post a job</a>
+                        <button className=" btn post-btn" >Post a job</button>
                     </li>
                   </ul>
                 </nav>

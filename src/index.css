@@ -131,10 +131,10 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .section, nav {
-    width: 95vw;
+  .section,
+  nav {
+    width: 90vw;
     margin: 0 auto;
-    font-size: 1.2rem;
   }
 }
 
@@ -161,8 +161,10 @@ p {
 
 .nav-logo {
   cursor: pointer;
-  height: 30px;
-  align-items: center;
+  height: 25px;
+  color: black;
+  font-weight: 600;
+  font-size: large;
 }
 
 .btn {
@@ -174,10 +176,9 @@ p {
   background: var(--clr-black);
   cursor: pointer;
   transition: var(--transition);
+  display: inline-block;
 }
-.btn:hover {
-  background: var(--clr-grey-5);
-}
+
 .nav-links {
   display: none;
 }
@@ -186,6 +187,7 @@ p {
 }
 
 /* nav media query */
+
 @media screen and (min-width: 800px) {
   .nav-center {
     display: flex;
@@ -201,7 +203,7 @@ p {
   .search-btn {
     display: inline-block;
   }
-  
+
   .nav-links {
     display: flex;
     justify-self: left;
@@ -212,9 +214,10 @@ p {
     cursor: pointer;
   }
 
-  .nav-links li { 
+  .nav-links li {
     height: 100%;
   }
+
   .link-btn {
     height: 100%;
     background: transparent;
@@ -227,19 +230,37 @@ p {
     font-size: 0.8em;
     margin: 20px 10px 20px 10px;
     transition: all 0.2s;
-
   }
 
-  .link-btn>a {
+  .link-btn > a {
     color: #212529;
   }
 
-  #post-btn {
+  .post-btn {
     background-color: #f03e3e;
     color: white;
-    font-size: 0.7em;
+    font-size: 1em;
     padding: 10px 20px 8px 20px;
     border-radius: 2px;
   }
+}
 
+@media screen and (min-width: 989px) {
+  .nav-center {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #fff !important;
+    padding: 10px 50px 2px 50px;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-self: left;
+    line-height: 0.9em;
+    z-index: 1000;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+  }
 }
