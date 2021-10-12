@@ -143,7 +143,6 @@ p {
   justify-content: center;
   background: transparent;
   box-shadow: var(--light-shadow);
-  position: fixed;
 }
 
 .nav-center {
