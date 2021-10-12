@@ -130,11 +130,9 @@ p {
   max-width: var(--max-width);
 }
 
-@media screen and (min-width: 800px) {
-  .section,
-  nav {
-    width: 90vw;
-    margin: 0 auto;
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
   }
 }
 
@@ -145,8 +143,7 @@ p {
   align-items: center;
   justify-content: center;
   background: transparent;
-  position: relative;
-  z-index: 1;
+  box-shadow: var(--light-shadow);
 }
 
 .nav-center {
@@ -157,6 +154,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 .nav-logo {
@@ -168,15 +166,13 @@ p {
 }
 
 .btn {
-  font-size: 1rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius);
-  border-color: transparent;
-  color: white;
-  background: var(--clr-black);
+  color: black;
   cursor: pointer;
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
   transition: var(--transition);
-  display: inline-block;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -192,10 +188,10 @@ p {
   .nav-center {
     display: flex;
     align-items: center;
-    transition: all 0.3s ease;
-    background-color: #fff !important;
-    box-sizing: border-box;
-    padding: 10px 175px 2px 175px;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: space-between;
+    max-width: 1170px;
   }
   .toggle-btn {
     display: none;
@@ -204,11 +200,15 @@ p {
     display: inline-block;
   }
 
+  .nav-header {
+    padding: 0;
+  }
+
   .nav-links {
     display: flex;
     justify-self: left;
     line-height: 0.9em;
-    z-index: 1000;
+    /* z-index: 1000; */
     align-items: center;
     float: right;
     cursor: pointer;
@@ -245,7 +245,7 @@ p {
   }
 }
 
-@media screen and (min-width: 989px) {
+/* @media screen and (min-width: 989px) {
   .nav-center {
     display: flex;
     align-items: center;
@@ -263,4 +263,4 @@ p {
     float: right;
     cursor: pointer;
   }
-}
+} */

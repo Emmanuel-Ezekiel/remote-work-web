@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars, FaSearch } from 'react-icons/fa'
 
 function Navbar() {
+     const [showLinks, setShowLinks] = useState(false);
+     const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
     return (
         <>
           <header className='nav'>
               <div className="nav-center">
                   <div className="nav-header">
-                      <a className="nav-logo logo" href="https://we-work-remotely.netlify.app">WorkRemotely</a>
-                      <button className="btn toggle-btn"> <FaBars/></button>
+                      <a className="nav-logo logo" href="https://we-work-remotely.netlify.app">Work Remotely</a>
+                      <button className="btn toggle-btn"  onClick={toggleLinks}> <FaBars/></button>
                   </div>
-
-                  <nav className="nav-bar">
+                { showLinks && ( <div className="links-container show-container">
                     <ul className="nav-links">
                       <li className="link-btn">
                           <a href="/categories">Categories</a>
@@ -30,7 +33,9 @@ function Navbar() {
                         <button className=" btn post-btn" >Post a job</button>
                     </li>
                   </ul>
-                </nav>
+                </div>
+                )}
+                  
               </div>
             </header>  
         </>
