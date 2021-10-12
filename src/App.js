@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
-// import Sidebar from './Sidebsr'
+import Hero from './Hero'
 
 function App() {
   return (
     <>
     <Navbar/>
-    {/* <Sidebar/> */}
+    <Hero/>
     </>
   );
 }

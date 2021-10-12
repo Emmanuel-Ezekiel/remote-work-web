@@ -1,11 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { FaBars, FaSearch } from 'react-icons/fa'
 
 function Navbar() {
-     const [showLinks, setShowLinks] = useState(false);
-     const toggleLinks = () => {
+    const [showLinks, setShowLinks] = useState(false);
+    const linksContainerRef = useRef(null);
+    const linksRef = useRef(null);
+    const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
     return (
         <>
           <header className='nav'>
@@ -14,8 +24,8 @@ function Navbar() {
                       <a className="nav-logo logo" href="https://we-work-remotely.netlify.app">Work Remotely</a>
                       <button className="btn toggle-btn"  onClick={toggleLinks}> <FaBars/></button>
                   </div>
-                { showLinks && ( <div className="links-container show-container">
-                    <ul className="nav-links">
+                <div className="links-container" ref={linksContainerRef}>
+                    <ul className="nav-links" ref={linksRef}>
                       <li className="link-btn">
                           <a href="/categories">Categories</a>
                       </li>
@@ -33,9 +43,7 @@ function Navbar() {
                         <button className=" btn post-btn" >Post a job</button>
                     </li>
                   </ul>
-                </div>
-                )}
-                  
+                </div>  
               </div>
             </header>  
         </>
