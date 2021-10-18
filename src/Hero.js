@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Work from './undraw_laravel_and_vue_59tp.svg'
+import Data from './Data'
 
 const Hero = () => {
+  const [ work, SetWork ] = useState(Data);
+
   return (
     <section className='hero' >
       <div className='hero-center'>
