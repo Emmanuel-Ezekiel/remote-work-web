@@ -207,7 +207,9 @@ p {
 .post-btn {
   display: none;
 }
-
+.trusted-banner {
+  display: none;
+}
 /* nav media query */
 
 @media screen and (min-width: 800px) {
@@ -273,6 +275,7 @@ p {
     border-radius: 2px;
     display: block;
   }
+
 }
 
 
@@ -282,10 +285,10 @@ p {
   content: "";
   position: absolute;
   width: 100%;
-  height: 65%;
+  height: 100%;
   top: 0;
   left: 0;
-  background: url(https://weworkremotely.com/assets/Header@3x-c75414…4a43b70212d3668a75a54970c4baac325aeb60cb92f66.svg);
+  background: url(https://weworkremotely.com/assets/Header@3x-c754140b276c02588dd4a43b70212d3668a75a54970c4baac325aeb60cb92f66.svg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -341,6 +344,7 @@ p {
   }
   .hero-center {
     grid-template-columns: 2fr 1fr;
+    /* margin-bottom: 9rem; */
   }
 
   .hero-info h1 {
@@ -354,11 +358,54 @@ p {
     justify-self: center;
   }
   .phone-img {
-    width: 12rem;
+    width: 17rem;
+  }
+  .banner-header {
+    padding-bottom: 20px;
+    margin-top: 60px;
+  }
+  .trusted-banner {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 2%;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(https://weworkremotely.com/assets/Trusted@2x-6d138fefbbe40fa68009b631b68bdb4b518bf30a6263fd7ea16658435a846bcd.png);
+  }
+
+  .trusted-text {
+    color: #9ea0a2;
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    background-color: #fff;
+    bottom: 110px;
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .hero::before {
+    background-size: contain;
+    height: 100%;
+  }
+  .hero-center {
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+    padding-bottom: 12vh;
+   
   }
 }
 
+
 @media screen and (min-width: 1200px) {
+  .hero::before {
+    background-size: contain;
+    height: 100%;
+  }
   .hero-center {
     grid-template-columns: 2fr 1fr;
     align-items: end;
@@ -376,11 +423,23 @@ p {
     color: var(--clr-red-dark);
   }
 }
+
 @media screen and (min-width: 1400px) {
+  .hero::before {
+    background-size: contain;
+    height: 100%;
+  }
   .hero-center {
     padding-bottom: 20vh;
+    /* margin-bottom: 7rem; */
   }
   .phone-img {
-    width: 17rem;
+    width: 7rem;
   }
+}
+
+
+
+.Jobs {
+  
 }

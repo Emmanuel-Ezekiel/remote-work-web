@@ -6,7 +6,8 @@ const Hero = () => {
   const [ work, SetWork ] = useState(Data);
 
   return (
-    <section className='hero' >
+    <main>
+       <section className='hero' >
       <div className='hero-center'>
         <article className='hero-info'>
           <h1 className="header"> 
@@ -22,7 +23,21 @@ const Hero = () => {
           <img src={Work} className='phone-img' alt='phone' />
         </article>
       </div>
+      <div className="trusted-banner">
+        <div className="trusted-text">
+          Trusted by the World's leading companies
+        </div>
+      </div>   
     </section>
+   {/* <div className='banner-header'>
+        <div className="trusted-banner">
+        <div className="trusted-text">
+          Trusted by the World's leading companies
+        </div>
+      </div>
+    </div> */}
+   </main>
+   
   );
 };
 
