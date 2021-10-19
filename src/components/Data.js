@@ -1,7 +1,7 @@
 
 
 
-export default Data = [
+const Data = [
     {
         id: 1,
         companyName: 'Toggl',
@@ -45,3 +45,5 @@ export default Data = [
         image: 'https://we-work-remotely.imgix.net/logos/0015/9437/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress'
     }
 ]
+
+export default Data;
