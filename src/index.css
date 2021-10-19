@@ -593,9 +593,9 @@ img.feed  {
   border: 1px solid #212529;
 }
 
-.company-name, .region-company{
-  /* margin-left: 2px; */
-}
+/* .company-name, .region-company{
+  margin-left: 2px;
+} */
 
 .job-title {
   color: #212529;
