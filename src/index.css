@@ -410,7 +410,6 @@ p {
     grid-template-columns: 2fr 1fr;
     align-items: end;
     padding-bottom: 12vh;
-    margin-bottom: 7rem;
   }
   .hero-info h1 {
     max-width: 100%;
