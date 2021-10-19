@@ -11,11 +11,11 @@ const List = ({ remote }) => {
                 <span className='new'>New</span>
                 <div className='highlight-bar'></div>
                 <div className='tooltip'>
-                    <a href="">
+                    <a href="https://we-work-remotely.netlify.app/">
                         <img src={image} alt="" className="flag-logo" />
                     </a>
                 </div>
-                <a href="" className="job-cate">
+                <a href="https://we-work-remotely.netlify.app/" className="job-cate">
                     <span className="company-name">{companyName}</span>
                     <br />
                     <span ClassName="job-title">{jobTitle}</span>
