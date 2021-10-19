@@ -1,7 +1,7 @@
 
 
 
-export default [
+export default Data = [
     {
         id: 1,
         companyName: 'Toggl',

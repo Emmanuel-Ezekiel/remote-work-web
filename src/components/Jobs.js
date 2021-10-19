@@ -15,6 +15,7 @@ function Jobs () {
                     </a>
                 </h2>
                 <List  remote={remote}/>
+                <button onClick={() => setRemote([])}>clear all</button>
             </article>
         </section>
     )

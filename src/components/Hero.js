@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Work from './undraw_laravel_and_vue_59tp.svg'
 
 
 const Hero = () => {
-
   return (
     <main>
        <section className='hero' >
