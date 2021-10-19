@@ -15,11 +15,10 @@ const List = ({ remote }) => {
                         <img src={image} alt="" className="flag-logo" />
                     </a>
                 </div>
-                <a href="">
+                <a href="" className="job-cate">
                     <span className="company-name">{companyName}</span>
                     <br />
-                    <span ClassName="title">{jobTitle}</span>
-                    <span className="featured">Featured</span>
+                    <span ClassName="job-title">{jobTitle}</span>
                     <br />
                     <span className="region-company">{Location}</span>
                 </a>

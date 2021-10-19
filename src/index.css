@@ -410,6 +410,7 @@ p {
     grid-template-columns: 2fr 1fr;
     align-items: end;
     padding-bottom: 12vh;
+    margin-bottom: 7rem;
   }
   .hero-info h1 {
     max-width: 100%;
@@ -467,6 +468,37 @@ img.feed {
   display: none;
 }
 
+
+@media screen and (min-width: 800px) {
+  
+  .Jobs-title {
+    margin: 10px 30px;
+  }
+
+  .Jobs-title > a {
+    color: #212529;
+    text-align: left;
+    letter-spacing: normal;
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+  .Jobs-title > span {
+  color: #212529;
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  font-family: "Neufile Grotesk Light", sans-serif;
+  font-weight: 200;
+}
+img.feed  {
+  display: inline;
+  width: 16px;
+  height: 16px;
+}
+}
+
+
+
+
 /* ==== Lists ====== */
 
 .features {
@@ -480,7 +512,6 @@ img.feed {
 }
 
 .new {
-    float: right;
     position: absolute;
     left: 275px !important;
     top: 14px;
@@ -489,7 +520,6 @@ img.feed {
     color: #4d5154;
     font-size: 6px;
     text-transform: uppercase;
-    margin-right: 0px;
     padding: 6px 8px 3px 8px;
     border-radius: 3px;
     font-family: "Neufile Grotesk Semi Bold", sans-serif;
@@ -515,7 +545,7 @@ img.feed {
   font-size: 12px;
 }
 
-.title {
+.job-title {
     color: #212529;
     display: inline-block;
     white-space: nowrap;
@@ -525,15 +555,6 @@ img.feed {
     font-size: 20px !important;
 }
 
-.featured {
-    float: right;
-    color: #212529;
-    text-transform: capitalize;
-    /* margin-top: 1px;
-    margin-bottom: 5px; */
-    margin-right: 50px;
-    font-size: 13px !important;
-}
 
 .region-company {
     color: #212529;
@@ -547,14 +568,38 @@ img.feed {
 
 @media screen and (min-width: 800px) {
   .features {
-  background-color: rgba(255,213,0,0.2);
-  border: none;
-  font-size: 10px;
+  font-size: 20px;
   margin: 10px 30px;
-  padding: 30px 10px;
-  position: relative;
-  margin-bottom: 8px;
-  row-gap: 5px;
+}
+.new {
+    position: absolute;
+    left: 942px !important;
+    top: 20px !important;
+    font-size: 0.8rem;
+}
+
+.flag-logo {
+  display: inline-block;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-color: #fff;
+  background-position: center center;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  left: -40px;
+  position: absolute;
+  border: 1px solid #212529;
+}
+
+.company-name, .region-company{
+  /* margin-left: 2px; */
+}
+
+.job-title {
+  color: #212529;
+  margin-left: 20px;
 }
 
 }

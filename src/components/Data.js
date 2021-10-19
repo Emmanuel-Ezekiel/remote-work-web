@@ -1,3 +1,6 @@
+import Logo from './logo.jpeg'
+
+
 export default [
     {
         id: 1,
