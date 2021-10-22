@@ -625,3 +625,23 @@ img.feed  {
 }
 
 }
+
+/* =========== link ========== */
+.description-btn {
+  margin: 20px 20px 0px 20px;
+  color: #212529;
+}
+
+.link-btn {
+  color: #212529;
+  font-size: 30px;
+}
+.home-btn {
+  margin-left: 10px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+
