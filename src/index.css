@@ -446,6 +446,18 @@ p {
     padding: 10px 30px;
 }
 
+.Jobs-btn {
+  margin: 0 180px;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 4px -2px rgb(144 146 148 / 20%);
+  font-size: 0.9em;
+  padding: 12px 18px 12px 18px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 .Jobs-title > a {
   color: #212529;
   text-align: left;
@@ -494,6 +506,9 @@ img.feed  {
   height: 16px;
 }
 }
+
+
+
 
 
 
@@ -572,7 +587,7 @@ img.feed  {
 }
 .new {
     position: absolute;
-    left: 942px !important;
+    left: 1000px !important;
     top: 20px !important;
     font-size: 0.8rem;
 }
