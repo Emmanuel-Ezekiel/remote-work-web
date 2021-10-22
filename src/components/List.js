@@ -1,12 +1,13 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const List = ({ remote }) => {
   return (
     <>
       {remote.map((job) => {
         const { id, companyName, jobTitle, Location, image } = job;
         return (
-          <ul key={id} className='job'>
+          <Link to={`/JobDescription/${id}`}>
+            <ul key={id} className='job'>
               <li className='features'>
                 <span className='new'>New</span>
                 <div className='highlight-bar'></div>
@@ -24,6 +25,8 @@ const List = ({ remote }) => {
                 </a>
               </li>
           </ul>
+          </Link>
+          
         );
       })}
     </>

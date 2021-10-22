@@ -2,14 +2,21 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Jobs from './components/Jobs'
+import JobDescription from './components/JobDescription'
+import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <Router>
     <Navbar/>
-    <Hero/>
-    <Jobs/>
-    </>
+    <Switch>
+      <Route  exact path="/">
+        <Hero/>
+        <Jobs/>
+      </Route>
+      <Route  path="/JobDescription/:id" children={<JobDescription/>}></Route>
+    </Switch>
+    </Router>
   );
 }
 

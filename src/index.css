@@ -509,12 +509,7 @@ img.feed  {
   margin: 0 450px;
   width: 300px;
   height: 40px;
-  text-transform: uppercase;
-  box-shadow: 0 4px 4px -2px rgb(144 146 148 / 20%);
-  font-size: 1em;
-  padding: 12px 18px 12px 18px;
-  border-radius: 2px;
-  cursor: pointer;
+  
 }
 
 

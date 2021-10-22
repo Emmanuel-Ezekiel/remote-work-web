@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import Data from './Data'
 import List from './List'
 
+
 function Jobs () {
     const [remote, setRemote] = useState(Data)
     return (
+        
         <section className='Jobs'>
             <article>
                 <h2 className='Jobs-title'>
