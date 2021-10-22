@@ -7,6 +7,7 @@ const JobDescription = () => {
      const [description, setDescription] = useState("")
      const [title, setTitle] = useState("")
      const [location, setLocation] = useState("")
+     const [image, setImage] = useState("")
      const { id } = useParams();
 
     useEffect(() => {
@@ -14,6 +15,7 @@ const JobDescription = () => {
         setTitle(newDescription.jobTitle);
         setDescription(newDescription.companyName);
         setLocation(newDescription.Location);
+        setImage(newDescription.image)
     }, [id])
     return (
     <section>
@@ -22,11 +24,10 @@ const JobDescription = () => {
          <span><BsFillArrowLeftSquareFill/></span><span className="home-btn"> Back Home</span>
        </Link>
        <article className="description">
-        <h2>{description}</h2>
+        <h2><img src={image} alt="" className="img-descripton"/>{description}</h2>
        <h2>{title}</h2>
        <button className="location-btn">{location}</button>
        </article>
-       
      </div>
     </section>
     )
