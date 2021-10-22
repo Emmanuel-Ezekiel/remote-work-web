@@ -14,7 +14,7 @@ const JobDescription = () => {
         setTitle(newDescription.jobTitle);
         setDescription(newDescription.companyName);
         setLocation(newDescription.Location);
-    }, [])
+    }, [id])
     return (
     <section>
      <div className="description-btn">
