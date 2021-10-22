@@ -447,12 +447,12 @@ p {
 }
 
 .Jobs-btn {
-  margin: 0 180px;
-  width: 100px;
+  margin: 0 80px;
+  width: 150px;
   height: 40px;
   text-transform: uppercase;
   box-shadow: 0 4px 4px -2px rgb(144 146 148 / 20%);
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 12px 18px 12px 18px;
   border-radius: 2px;
   cursor: pointer;
@@ -462,17 +462,16 @@ p {
   color: #212529;
   text-align: left;
   letter-spacing: normal;
-  padding-left: 10px;
+  padding-left: 3px;
   font-size: 0.7rem;
 }
 
 .Jobs-title > span {
   color: #212529;
   letter-spacing: normal;
-  font-family: "Neufile Grotesk Light", sans-serif;
   font-weight: 200;
   font-size: 12px;
-  margin-left: 8px;
+  margin-left: 5px;
 }
 
 img.feed {
@@ -505,6 +504,20 @@ img.feed  {
   width: 16px;
   height: 16px;
 }
+
+.Jobs-btn {
+  margin: 0 450px;
+  width: 300px;
+  height: 40px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 4px -2px rgb(144 146 148 / 20%);
+  font-size: 1em;
+  padding: 12px 18px 12px 18px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
 }
 
 

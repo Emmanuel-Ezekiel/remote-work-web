@@ -29,7 +29,7 @@ function Navbar() {
                       <li className="link-btn">
                           <a href="/categories">Categories</a>
                       </li>
-    |                <li className="link-btn">
+                    <li className="link-btn">
                           <a href="/community">Community</a>
                       </li>
                       <li className="link-btn">
