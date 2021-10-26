@@ -43,6 +43,13 @@ const Data = [
         jobTitle: 'WordPress Content Writer',
         Location: 'Full-Time/Anywhere in the world',
         image: 'https://we-work-remotely.imgix.net/logos/0015/9437/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress'
+    },
+    {
+        id: 7,
+        companyName: 'Session Lab',
+        jobTitle: 'Software Engineer (React)',
+        Location: 'Full-Time/ America Only',
+        image: 'https://we-work-remotely.imgix.net/logos/0071/3373/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress'
     }
 ]
 

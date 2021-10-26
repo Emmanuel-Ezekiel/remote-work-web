@@ -20,13 +20,13 @@ const JobDescription = () => {
     return (
     <section>
      <div className="description-btn">
-        <Link to='/' className="link-btn">
-         <span><BsFillArrowLeftSquareFill/></span><span className="home-btn"> Back Home</span>
+        <Link to='/' className="link-to-btn">
+         <span className="arrow"><BsFillArrowLeftSquareFill/></span><span className="back-btn"> Back Home</span>
        </Link>
        <article className="description">
-        <h2><img src={image} alt="" className="img-descripton"/>{description}</h2>
-       <h2>{title}</h2>
-       <button className="location-btn">{location}</button>
+        <h2 ><img src={image} alt="" className="img-descripton"/>{description}</h2>
+       <h2 className="title">{title}</h2>
+       <span className="location-btn">{location}</span>
        </article>
      </div>
     </section>
