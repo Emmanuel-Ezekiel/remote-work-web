@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom';
+
 
  const footer = () => {
     return (
@@ -11,16 +13,22 @@ import React from 'react'
                     <p className="footer-text">
                         We strongly encourage employers to embrace diversity, equity, and inclusion as fundamental values when hiring through We Work Remotely.
                     </p>
-                    <h2 className="num-post">
+                    </div>
+
+                    <div>
+                        <h2 className="num-post">
                             22,439
                         </h2>
                         <p className="text-post">
                             Remote Jobs Posted
                         </p>
-                        <button className="post-btn">
-                            Post a Job
-                     </button>
-                    </div> 
+                        <Link to="/Add-jobs" >
+                    <button className="post-btn">Add Jobs</button>
+                      </Link>
+                    </div>
+                    
+                
+                    
             </footer>
             
         </div>

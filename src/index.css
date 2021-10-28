@@ -96,7 +96,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -651,17 +651,32 @@ footer {
 }
 .footer-container {
   background-color: black;
-  height: 5000px;
+  height: 300px;
 }
 
 .footer-desc {
-  color: white !important;
+  color: white ;
 }
 
 .foot-head {
   font-size: 12px;
 }
 
-p > .footer-text {
-  color: white !important;
+.footer-text {
+  color: white;
+}
+
+.num-post   {
+  color: #fff;
+}
+.text-post {
+  color: white;
+}
+
+.post-btn{
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 3px 5px;
+  cursor: pointer;
 }

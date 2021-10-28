@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Data from './Data'
 import List from './List'
+import { Link, useParams } from 'react-router-dom';
 
 
 function Jobs () {

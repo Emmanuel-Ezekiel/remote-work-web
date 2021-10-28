@@ -24,7 +24,7 @@ const JobDescription = () => {
          <span className="arrow"><BsFillArrowLeftSquareFill/></span><span className="back-btn"> Back Home</span>
        </Link>
        <article className="description">
-        <h2 ><img src={image} alt="" className="img-descripton"/>{description}</h2>
+        <h2 ><img src={image} alt="jobImage" className="img-descripton"/>{description}</h2>
        <h2 className="title">{title}</h2>
        <span className="location-btn">{location}</span>
        </article>
