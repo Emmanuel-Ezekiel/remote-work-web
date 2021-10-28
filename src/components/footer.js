@@ -4,18 +4,23 @@ import React from 'react'
     return (
         <div>
             <footer className="footer-container">
-                <div className="footer-desc">
-                    <div>
-                        <h1 className="footer-head">
+                    <div className="footer-desc">
+                        <h2 className="footer-head">
                         WorkRemotely
-                    </h1>
+                        </h2>
                     <p className="footer-text">
                         We strongly encourage employers to embrace diversity, equity, and inclusion as fundamental values when hiring through We Work Remotely.
                     </p>
-                    </div>
-                    
-                </div>
-
+                    <h2 className="num-post">
+                            22,439
+                        </h2>
+                        <p className="text-post">
+                            Remote Jobs Posted
+                        </p>
+                        <button className="post-btn">
+                            Post a Job
+                     </button>
+                    </div> 
             </footer>
             
         </div>
