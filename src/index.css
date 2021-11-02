@@ -614,6 +614,15 @@ img.feed {
 .link-to-btn {
   font-size: 20px;
 }
+
+.link-back {
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.home-back {
+  margin-top: 20px;
+}
 .back-btn {
   margin-left: 10px;
   color: #f03e3e;
@@ -646,16 +655,40 @@ img.feed {
 }
 
 /* ===== Footer ===== */
-footer {
+/* footer {
   height: 100hv;
-}
+} */
+
 .footer-container {
   background-color: black;
   height: 300px;
 }
 
+.footer-head {
+  text-align: center;
+}
+
+.footer-text {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.footer-post {
+  text-align: center;
+}
+
 .footer-desc {
-  color: white ;
+  color: white;
+}
+
+.num-post {
+  /* display: flex;
+  justify-content: flex-end;
+  font-size: x-large; */
+}
+
+.text-post {
+  margin-top: -8px;
 }
 
 .foot-head {
@@ -666,17 +699,55 @@ footer {
   color: white;
 }
 
-.num-post   {
+.num-post {
   color: #fff;
 }
 .text-post {
   color: white;
 }
 
-.post-btn{
-  display: block;
+.footer-post-btn {
   background-color: red;
   color: white;
   padding: 3px 5px;
   cursor: pointer;
+  width: 90px;
+  height: 30px;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 800px) {
+  .footer-container {
+    background-color: black;
+    height: 300px;
+  }
+
+  .footer-top {
+    margin: 0px 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .num-post {
+    display: flex;
+    justify-content: flex-end;
+    font-size: x-large;
+  }
+  .footer-post-btn {
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 3px 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+  }
+  .footer-head {
+  text-align: left;
+  margin-left: 2px;
+}
+.footer-text {
+  margin-left: 10px;
+  text-align: left;
+}
 }

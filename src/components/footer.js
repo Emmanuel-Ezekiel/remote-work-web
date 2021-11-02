@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
     return (
         <div>
             <footer className="footer-container">
+                <div className="footer-top">
                     <div className="footer-desc">
                         <h2 className="footer-head">
                         WorkRemotely
                         </h2>
                     <p className="footer-text">
-                        We strongly encourage employers to embrace diversity, equity, and inclusion as fundamental values when hiring through We Work Remotely.
+                        We strongly encourage employers to embrace diversity, equity, and <br/> inclusion as fundamental values when hiring through We Work <br /> Remotely.
                     </p>
                     </div>
 
@@ -23,9 +24,11 @@ import { Link } from 'react-router-dom';
                             Remote Jobs Posted
                         </p>
                         <Link to="/Add-jobs" >
-                    <button className="post-btn">Add Jobs</button>
+                    <button className="footer-post-btn">Add Jobs</button>
                       </Link>
                     </div>  
+                </div>
+                    
             </footer>
             
         </div>
