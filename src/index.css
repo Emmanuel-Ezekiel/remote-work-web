@@ -299,7 +299,7 @@ p {
   padding-bottom: 60px;
   padding-top: 1px;
   display: grid;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
   justify-items: center;
 }
 .hero-center {
@@ -340,7 +340,7 @@ p {
     height: 100%;
   }
   .hero-center {
-    grid-template-columns: 2fr 1fr;
+    -ms-grid-columns: 2fr 1fr;
     /* margin-bottom: 9rem; */
   }
 
@@ -389,7 +389,7 @@ p {
     height: 100%;
   }
   .hero-center {
-    grid-template-columns: 2fr 1fr;
+    -ms-grid-columns: 2fr 1fr;
     align-items: end;
     padding-bottom: 12vh;
   }
@@ -401,7 +401,7 @@ p {
     height: 100%;
   }
   .hero-center {
-    grid-template-columns: 2fr 1fr;
+    -ms-grid-columns: 2fr 1fr;
     align-items: end;
     padding-bottom: 12vh;
   }
