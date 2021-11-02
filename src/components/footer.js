@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
  const footer = () => {
@@ -15,7 +15,7 @@ import { Link, useParams } from 'react-router-dom';
                     </p>
                     </div>
 
-                    <div>
+                    <div className="footer-post">
                         <h2 className="num-post">
                             22,439
                         </h2>
@@ -25,10 +25,7 @@ import { Link, useParams } from 'react-router-dom';
                         <Link to="/Add-jobs" >
                     <button className="post-btn">Add Jobs</button>
                       </Link>
-                    </div>
-                    
-                
-                    
+                    </div>  
             </footer>
             
         </div>
