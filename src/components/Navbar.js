@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaBars, FaSearch } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
@@ -40,7 +41,9 @@ function Navbar() {
                       </li>  
                     <li className="link-btn search-btn" > <FaSearch/></li>
                     <li className="link-btn">
+                      <Link to="/Add-jobs" >
                         <button className=" btn post-btn" >Post a job</button>
+                      </Link>
                     </li>
                   </ul>
                 </div>  

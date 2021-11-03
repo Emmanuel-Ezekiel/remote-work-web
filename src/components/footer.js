@@ -24,7 +24,7 @@ import { Link } from 'react-router-dom';
                             Remote Jobs Posted
                         </p>
                         <Link to="/Add-jobs" >
-                    <button className="footer-post-btn">Add Jobs</button>
+                    <button className="footer-post-btn">Post a Job</button>
                       </Link>
                     </div>  
                 </div>

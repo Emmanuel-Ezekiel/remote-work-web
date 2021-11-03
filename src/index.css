@@ -623,6 +623,11 @@ img.feed {
 .home-back {
   margin-top: 20px;
 }
+
+.home-return {
+  margin-left: -20px;
+}
+
 .back-btn {
   margin-left: 10px;
   color: #f03e3e;
@@ -750,4 +755,45 @@ img.feed {
   margin-left: 10px;
   text-align: left;
 }
+
+.home-back {
+  margin-top: 20px;
+  margin-left: -40px;
 }
+
+}
+
+
+/* ====== add jobs ====== */
+
+.addjob-header {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 12px;
+  color: #212529;
+}
+
+.create-jobs {
+  box-shadow: 0 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background: #fff;
+   
+}
+
+.create-container {
+    font-weight: bold;
+    font-size: 1.0em;
+    color: #f03e3e;
+    padding: 30px 0px 15px 0px;
+    margin: 0px 30px 20px 30px;
+}
+
+.required-field {
+  display: inline;
+    font-size: 12px;
+    color: #909294;
+    font-weight: lighter;
+    float: right;
+}
+
+
