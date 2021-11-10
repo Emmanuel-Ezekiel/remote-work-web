@@ -15,13 +15,13 @@ function App() {
       <Route  exact path="/">
         <Hero/>
         <Jobs/>
+        <Footer/>
       </Route>
       <Route  path="/JobDescription/:id" children={<JobDescription/>}></Route>
       <Route  path="/Add-jobs">
         <AddJobs/>
       </Route>
     </Switch>
-    <Footer/>
     </Router>
   );
 }

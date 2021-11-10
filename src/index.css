@@ -686,11 +686,11 @@ img.feed {
   color: white;
 }
 
-.num-post {
-  /* display: flex;
+/* .num-post {
+  display: flex;
   justify-content: flex-end;
-  font-size: x-large; */
-}
+  font-size: x-large;
+} */
 
 .text-post {
   margin-top: -8px;
@@ -767,7 +767,7 @@ img.feed {
 /* ====== add jobs ====== */
 
 .addjob-header {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
   font-weight: 12px;
   color: #212529;
@@ -777,7 +777,7 @@ img.feed {
   box-shadow: 0 1px 5px rgb(0 0 0 / 15%);
     border-radius: 4px;
     background: #fff;
-   
+    height: 300px;
 }
 
 .create-container {
@@ -785,15 +785,82 @@ img.feed {
     font-size: 1.0em;
     color: #f03e3e;
     padding: 30px 0px 15px 0px;
-    margin: 0px 30px 20px 30px;
+    margin: 0px 15px 20px 15px;
 }
 
 .required-field {
   display: inline;
-    font-size: 12px;
+    font-size: 11px;
     color: #909294;
     font-weight: lighter;
     float: right;
 }
 
+.position-details {
+  margin-left: 15px;
+}
 
+input {
+  padding: 16px 12px 16px 12px;
+    cursor: auto;
+    border-color: rgba(144,146,148,0.2);
+    border-style: solid;
+    border-radius: 3px;
+    margin: 0 0 5px 0;
+    background-color: #f8f9fa;
+    outline-width: 2px;
+    outline-color: rgba(144,146,148,0.2);
+}
+
+.addjob-title {
+  font-weight: 900;
+  color: #212529;
+  font-size: 1rem;
+  display: block;
+}
+
+.input-text {
+  padding-top: 5px;
+    display: inline-block;
+    font-size: 0.8em;
+    color: #909294;
+}
+
+.checkout {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: 20px;
+}
+
+ul.checkout li {
+  display: inline;
+  font-size: 1rem;
+}
+
+.category {
+  padding-right: 180px;  
+}
+
+.sub-category {
+  margin: 0 0 20px 0;
+}
+
+ul.sub-category li {
+  list-style-type: none;
+    padding: 3px 0;
+    font-size: 1.1rem;
+}
+ul.sub-category.selectable-container li {
+  display: inline;
+}
+
+
+
+.listing-category {
+    outline: none;
+    width: 200px;
+    height: 30px;
+    border: 1.5px solid rgba(144,146,148,0.2);
+    padding: 16px 12px 16px 12px;
+}
